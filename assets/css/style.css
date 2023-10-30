@@ -1,0 +1,15 @@
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.menu {
+    list-style: none;
+}
+.header {
+    text-align: center;
+}
+.link {
+    text-decoration: none;
+    color: #000;
+}
