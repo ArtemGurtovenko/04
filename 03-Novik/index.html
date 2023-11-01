@@ -4,116 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-        <header>
+    <header>
             <div class="container">
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About me</li>
-                        <li>Skills</li>
-                        <li>Portfolio</li>
-                        <li>Contacts</li>
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li> <a href="">Home</a></li>
+                        <li><a href="">About me</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
-        </header>
-    <main>
+    </header>
+    <main class="main">
         <div class="container">
             <section>
-                <h1>Denis Novik</h1>
-                <img src="assets/img/photox940.jpg" alt="my picture">
+                <h1 class="main-title">Denis Novik</h1>
+                <img src="assets/img/photox940.jpg" alt="my picture" class="Novik">
             </section>
-            <section>
-                <h2>About me</h2>
-                <p>
-                    Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
-                </p>
-                <br>
-                <p>
-                    I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
-                </p>
-                <br>
-                <p>
-                    Ready to implement excellent projects with wonderful people. 
-                </p>
-            </section>
-            <section>
-                <h2>Skills</h2>
-                <span>I work in such programms as</span>
-                <ul>
+        </div>
+            <section class="section-about">
+            <div class="container text-wrapper">
+                    <h2 class="section-title">About me</h2>
+                    <p>
+                        Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+                    </p>
+                    <br>
+                    <p>
+                        I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+                    </p>
+                    <br>
+                    <p>
+                        Ready to implement excellent projects with wonderful people. 
+                    </p>
+            </div>
+        </section>   
+             <section id="skills">
+            <div class="container">
+                    <h2 class="section-title skills-title">Skills</h2>
+                <div class="sub-title">I work in such programms as</div>
+                <ul class="skills-list">
                     <li>
-                        <div>
-                            <img src="assets/img/Ps.png" alt="ps logo">
-                            <p>Abobe
-                                <br>
-                                Photoshop
-                            </p>
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/gray.png" alt="">
-                            <img src="assets/img/gray.png" alt="">
-                            <img src="assets/img/gray.png" alt="">
+                        <div class="skill-item">
+                            <div class="skill-logo">
+                                <img src="assets/img/Ps.png" alt="">
+                            </div>
+                            <div class="skill-title">
+                                Adobe Photoshop
+                            </div>
+                            <div class="skill-rating">
+                                <span class="star"></span><span class="star"></span><span class="star gray"></span><span class="star gray"></span><span class="star gray"></span>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <img src="assets/img/Ai.png" alt="ai logo">
-                            <p>Abobe
-                                <br>
-                                Illustrator
-                            </p>
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/gray.png" alt="">
-                            <img src="assets/img/gray.png" alt="">
+                        <div class="skill-item">
+                            <div class="skill-logo">
+                                <img src="assets/img/Ps.png" alt="">
+                            </div>
+                            <div class="skill-title">
+                                Adobe Illustator
+                            </div>
+                            <div class="skill-rating">
+                                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star gray"></span><span class="star gray"></span>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <img src="assets/img/Ae.png" alt="ae logo">
-                            <p>Abobe
-                                <br>
-                                After Effects 
-                            </p>
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/gray.png" alt="">
+                        <div class="skill-item">
+                            <div class="skill-logo">
+                                <img src="assets/img/Ps.png" alt="">
+                            </div>
+                            <div class="skill-title">
+                                Adobe Photoshop
+                            </div>
+                            <div class="skill-rating">
+                                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star gray"></span>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <img src="assets/img/Figma.png" alt="figma logo">
-                            <p>Figma
-                                <br>
-                            </p>
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
-                            <img src="assets/img/black.png" alt="">
+                    <li class="last">
+                        <div class="skill-item">
+                            <div class="skill-logo">
+                                <img src="assets/img/Ps.png" alt="">
+                            </div>
+                            <div class="skill-title">
+                                Adobe Photoshop
+                            </div>
+                            <div class="skill-rating">
+                                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+                            </div>
                         </div>
                     </li>
                 </ul>
-            </section>    
-            <section>
-                <h2>Portfolio</h2>
-                <img src="assets/img/Fashion-Store.png" alt="">
-                <a href="#">
-                    Online fashion store - <br> Homepage
-                </a>
-                <img src="assets/img/reebok_web.jpg" alt="">
-                <a href="">
-                    Reebok Store - Concept
-                </a>
-                <img src="assets/img/braun-landing.jpg" alt="">
-                <a href="">Braun Landing Page - Concept</a>
+            </div>   
             </section>
+            <section class="section-portfolio">
+                <div class="container">     
+                    <h2 class="section-title">Portfolio</h2>
+                    <img src="assets/img/Fashion-Store.png" alt="">
+                    <a href="#" class="fashion-link">
+                        Online fashion store - <br> Homepage
+                    </a>
+                    <img src="assets/img/reebok_web.jpg" alt="">
+                    <a href="#" class="fashion-link">
+                        Reebok Store - Concept
+                    </a>
+                    <img src="assets/img/braun-landing.jpg" alt="">
+                    <a href="#" class="fashion-link">Braun Landing Page - Concept</a>
+                </div>  
+            </section>
+        <!-- <div class="container">  
             <section>
                 <h2>Contacts</h2>
                 <p>Want to know more or just chat? <br>You are welcome!</p>
@@ -124,9 +132,7 @@
                 <img src="assets/img/dribbble.png" alt="">
                 <p>Like me on <br> LinkedIn, Instagram, Behance, <br> Dribble</p>
             </section>
-        </div>
-        
+        </div>   -->    
     </main>
-    a
 </body>
 </html>
