@@ -43,10 +43,14 @@ img {
     font-size: 48px;
     margin-bottom: 50px;
 }
-.Novik {
+.novik {
     width: 100%;
-    height: auto;
+    height: 100%;
     vertical-align: top;
+}
+.denis {
+    width: 970px;
+    height: 387px;
 }
 .section-about {
     text-align: center;
