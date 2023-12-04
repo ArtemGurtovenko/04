@@ -1,0 +1,273 @@
+$text-color: #565656;
+$title-color: #000;
+$sub-text: #7b7b7b;
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    object-fit: cover;
+}
+a, button {
+    transition: all .2s ease;
+}
+.container {
+    width: min(90%, 1170px);
+    margin: 0 auto;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #232323;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 40px 0;
+    background-color: #fff;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 42px;
+            text-transform: uppercase;
+                a {
+                    font-size: 0.875rem;
+                    letter-spacing: 0.2625rem;
+                    color: $title-color;
+                    text-decoration: none;
+                    transition: all .2s ease;
+                    position: relative;
+                    &:hover::before {
+                        opacity: 1;
+                        transition: all .5s ease;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 40px;
+                        height: 1px;
+                        left: 15%;
+                        top: 22px;
+                        background-color: $title-color;
+                        opacity: 0;
+                        display: inline-block;
+                    }
+                }  
+        }
+        .search::before {
+            height: 0;
+            width: 0;
+        }
+    }
+}
+
+.title-wrapper {
+    max-width: 770px;
+    .main-title {
+        font-size: 3rem;
+        line-height: 4rem;
+        letter-spacing: 0.15rem;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+}
+.banner {
+    background-image: url(../image/bg-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 380px;
+}
+.blog {
+    padding-top: 90px;
+}
+.blog-title {
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.15rem;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-bottom: 50px;
+}
+.blog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    .text-wrapper {
+        width: 50%;
+        padding-top: 85px;
+        .sub-text {
+            color: $sub-text;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.66rem;
+            margin-bottom: 30px;
+        }
+        .date {
+            color: $sub-text;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.66rem;
+            margin-bottom: 50px;
+        }
+    }
+    .image {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+        
+}
+.section-text {
+    font-family: 'Red Hat Display', sans-serif;
+    color: $title-color;
+    font-size: 1.4375rem;
+    line-height: 166%;
+    font-weight: 500;
+    letter-spacing: 0.14375rem;
+    margin-bottom: 15px;
+}
+.descr {
+    line-height: 1.66rem;
+    letter-spacing: 0.05rem;
+    width: 448px;
+}
+i {
+    margin-right: 12px;
+}
+.holder {
+    width: 369px;
+}
+.text-wrapper_number-2 {
+    padding-left: 120px;
+}
+.latest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .posts-title {
+        font-size: 1.75rem;
+        color: $title-color;
+        letter-spacing: .175rem;
+        line-height: 166%;
+        font-family: 'Red Hat Display' sans-serif;
+        margin-bottom: 50px;
+    }
+    span {
+        color: $sub-text;
+        line-height: 166%;
+        letter-spacing: 0.1rem;
+    }
+}
+.posts-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    img {
+        margin-bottom: 25px;
+    }
+    .span-holder {
+        display: flex;
+        justify-content: space-between;
+        span {
+            font-size: 0.75rem;
+            color: $sub-text;
+            line-height: 166%;
+            margin-bottom: 26px;
+        }
+    }
+    .posts-title {
+        font-weight: 500;
+        font-size: 1.375rem;
+        letter-spacing: 0.1375rem;
+        line-height: 166%;
+        font-family: 'Red Hat Display' sans-serif;
+        color: $title-color;
+        margin-bottom: 20px;
+    }
+    .posts-text {
+        line-height: 166%;
+        letter-spacing: 0.05rem;
+        color: $text-color;
+    }
+}
+.popular {
+    padding: 86px 0 90px;
+    .match {
+        width: 50%;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    .most-popular {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            opacity: 0;
+            margin-right: 20px;
+        }
+        .posts-title {
+            margin-bottom: 46px;
+        }
+        .sub-title {
+            color: $sub-text;
+            font-size: 1rem;
+            line-height: 166%;
+            letter-spacing: 0.1rem;
+        }
+        i {
+            opacity: 0;
+            margin-right: 20px;
+        }
+    }
+    .span-holder {
+        display: flex;
+        justify-content: space-between;
+        span {
+            color: $sub-text;
+            font-size: 0.75rem;
+            letter-spacing: 0.075rem;
+            line-height: 166%;
+            margin-bottom: 20px;
+        }
+    }
+    .popular-title {
+        font-size: 1.5rem;
+        color: $title-color;
+        font-family: 'Red Hat Display' sans-serif;
+        margin-bottom: 20px;
+        line-height: 166%;
+        letter-spacing: 0.15rem;
+    }
+    .popular-text {
+        line-height: 166%;
+        letter-spacing: 0.05rem;
+        color: $text-color;
+    }
+    .creativity {
+        width: 50%;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    
+}
