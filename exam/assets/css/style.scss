@@ -49,6 +49,7 @@ main {
     height: 90vh;
     background-repeat: no-repeat;
     background-image: url(../images/HeaderBackground.jpg);
+    background-repeat: no-repeat;
     padding-top: 295px;
     .sub-title {
         margin-bottom: 48px;
@@ -290,6 +291,7 @@ button {
 
 .review-background {
     background-image: url(../images/spain.jpg);
+    background-repeat: no-repeat;
     .container {
         display: flex;
         justify-content: flex-end;
@@ -297,6 +299,7 @@ button {
 }
 .tourist-review {
     background-image: url(../images/BG.jpg);
+    background-repeat: no-repeat;
     padding-top: 120px;
     padding-bottom: 180px;
 }
@@ -347,6 +350,7 @@ button {
         width: 20px;
         height: 20px;
         background-image: url(../images/quote-left.svg);
+        background-repeat: no-repeat;
         top: -5px;
         left: 4px;
     }
