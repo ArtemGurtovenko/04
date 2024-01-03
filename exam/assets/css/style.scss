@@ -244,6 +244,7 @@ button {
         position: absolute;
         display: inline-block;
         background-image: url(../images/Line.svg);
+        background-repeat: no-repeat; 
         width: 436px;
         height: 90px;
         top: -77%;
@@ -254,6 +255,8 @@ button {
         position: absolute;
         display: inline-block;
         background-image: url(../images/Line.svg);
+        background-repeat: no-repeat;
+        background-size: 100%; 
         width: 436px;
         height: 90px;
         top: -76%;
@@ -262,7 +265,9 @@ button {
 }
 .review {
     padding: 220px 0 120px;
-    background-image: url(../images/render.jpg);  
+    background-image: url(../images/render.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;  
 }
 .review-box {
     background: rgba(35, 35, 35, 0.90);
@@ -291,6 +296,7 @@ button {
 
 .review-background {
     background-image: url(../images/spain.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     .container {
         display: flex;
@@ -300,6 +306,7 @@ button {
 .tourist-review {
     background-image: url(../images/BG.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
     padding-top: 120px;
     padding-bottom: 180px;
 }
@@ -351,6 +358,7 @@ button {
         height: 20px;
         background-image: url(../images/quote-left.svg);
         background-repeat: no-repeat;
+        background-size: 100%;
         top: -5px;
         left: 4px;
     }
