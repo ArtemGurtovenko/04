@@ -2,17 +2,17 @@
 function task1() {
     console.log(arguments.length)
 }
-function task2() {
-    const r = prompt('Enter r')
-    const i = prompt('Enter i')
+function task2(r, i) {
+    let r = 0
+    let i = 0
     if(r < i) {
-        alert('-1')
+       return -1
     }
     else if (r > i) {
-        alert('1')
+        return 1
     }
     else {
-        alert('0')
+       return 0
     }
 }
 function factorial(r = 1) {
