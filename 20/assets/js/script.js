@@ -1,4 +1,4 @@
-// Функцію можно створити тількі у js через "function" або в html теж саме але тільки в тегу <script>
+// function expression, arrow function IIFE
 function task1() {
     console.log(arguments.length)
 }
