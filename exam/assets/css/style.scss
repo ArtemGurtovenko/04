@@ -363,6 +363,76 @@ button {
         left: 4px;
     }
 }
+.contacts {
+    color: #2c4058;
+    font-family: "GothamBook", sans-serif;
+  }
+  .contacts__map {
+    width: 100%;
+    height: 700px;
+  }
+  .contacts__form {
+    position: relative;
+    z-index: 5;
+    padding: 60px 60px 80px;
+    background: url("../img/form-bg/background.jpg"), #fff;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    margin-top: -300px;
+    margin-bottom: -248px;
+  }
+  @media screen and (max-width: 860px) {
+    .contacts__form {
+      margin: 0;
+    }
+  }
+  .contacts__title {
+    margin-bottom: 60px;
+  }
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts__contacts {
+    width: 100%;
+    margin-right: 15px;
+  }
+  .contacts__contact {
+    font-size: 1.125rem;
+    margin-bottom: 45px;
+  }
+  .contacts__contact a {
+    color: inherit;
+  }
+  .contacts__icon {
+    display: inline;
+    height: 1em;
+    color: #7e5aff;
+  }
+  .contacts__inputs {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .contacts__input {
+    color: #2c4058;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(44, 64, 88, 0.6);
+    font-size: 1.125rem;
+    padding: 1.25rem 0;
+    transition: border-color 0.25s;
+    margin-bottom: 30px;
+  }
+  .contacts__input:focus, .contacts__input:focus-visible {
+    border-color: #2c4058;
+  }
+  .contacts__btn {
+    margin: 0 0 0 auto;
+  }
+  
 
 
 footer {
