@@ -35,4 +35,14 @@ function task5(r, i) {
     }
     
 }
-// Часть завдань "Норма" не встигаю зробити, прошу мене вибачити. 
+function task6(r) {
+    if(r<=0) {
+        return false
+    }
+    let vi = 0
+    for(let i=1; i<r; i++)
+    if (r%i===0) {
+        vi+=i
+    }
+    return vi===r
+}
